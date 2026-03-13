@@ -1,3 +1,5 @@
 theme = Dracula+
 macos-option-as-alt = true
 shell-integration-features = ssh-terminfo,ssh-env
+font-family = "JetBrainsMono Nerd Font"
+font-size = 13
