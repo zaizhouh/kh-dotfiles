@@ -108,16 +108,8 @@ source ${ZIM_HOME}/init.zsh
 
 ## -----------------------------------------------------------------------------------------------------------------------
 
-# 将 Google Cloud SDK 的 bin 目录添加到 PATH
-export PATH="/opt/homebrew/share/google-cloud-sdk/bin:$PATH"
-
 # homebrew
 eval "$(/opt/homebrew/bin/brew shellenv)"
-
-# pyenv setup
-export PYENV_ROOT="$HOME/.pyenv"
-[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
 
 # OrbStack
 source ~/.orbstack/shell/init.zsh 2>/dev/null || :
@@ -128,10 +120,6 @@ export NVM_DIR="$HOME/.nvm"
 
 
 [ -f "$HOME/.local/bin/env" ] && . "$HOME/.local/bin/env"
-
-# Added by LM Studio CLI (lms)
-export PATH="$PATH:/Users/kelvhu/.lmstudio/bin"
-# End of LM Studio CLI section
 
 
 # alias and func
@@ -154,5 +142,3 @@ source ~/.cargo/env
 
 # for dotfiles mgmt
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-
-
